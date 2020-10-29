@@ -1,0 +1,166 @@
+div.SurfApp {
+	align-self: flex-start;
+  	vertical-align: top;
+  	width: 600px;
+  	height: auto;
+  	background-color: white;
+  	padding: 15px;
+}
+
+div.SurfText{
+	text-align: left;
+	border: 1px solid grey;
+	padding: 4px;
+	margin-top: 5px;
+}
+
+div.app{
+  display:block;
+  flex-direction: row;
+  text-align: center;
+  width: auto;
+  height: auto;
+  gap: 12px;
+  padding: 12px;
+  
+}
+body{
+	background-color: #b5e7a0;;
+}
+
+div.Chart{
+	width: auto;
+	height: auto;
+}
+
+div.Map{
+	width:auto;
+}
+
+.leaflet-container{
+	width: auto;
+	height: 300px;
+	margin-top: 5px;
+	padding: 4px;
+	border: 1px solid grey;
+	z-index: 0;
+}
+
+.Select.is-open{
+	z-index: 1;
+}
+
+#about-text{
+	margin: 5%;
+	text-align: center;
+    max-width: 600px;
+}
+
+
+.git-logo{
+	right: 5px;
+	position: absolute;
+	vertical-align: middle;
+}
+
+.NavLink{
+	display: inline-block;
+	padding-right: 31px;
+}
+
+.meal-app{
+	display: flex;
+	flex-direction: row;
+	padding: 5px;
+	border-radius: 5px;
+	height: 530px;
+}
+.meal-display{
+	display: inline-flex;
+	background-color: #cff0c1;
+	padding: 5px;
+	border-radius: 5px;
+	height: 100%;
+	vertical-align: top;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.meal-img{
+	max-width: 300px;
+	height: 300px;
+	border: 3px solid grey;
+	border-radius: 2px;
+}
+
+.meal-recipe{
+	text-align: center;
+	font-family: Times;
+	width: 600px;
+}
+
+.meal-recipe > div {
+	margin: 3px;
+	padding: 5px;
+	display: block;
+}
+
+.btn-light > img{
+	float: right;
+	width: 40px;
+	height: 40px;
+	border: 2px solid grey;
+	margin-left: 3px;
+}
+
+.btn-light{
+	line-height: 3;
+}
+
+.sidebar{
+	align-self: flex-start;
+	text-align: left;
+	overflow: auto;
+	background-color: white;
+	width: 25%; 
+	padding: 15px;
+	border-radius:5px;
+}
+
+.sidebar .git-logo{
+	position: relative;
+	float: right;
+	margin: 20px;
+}
+
+.spinner-border{
+	height: 75px;
+	width: 75px;
+}
+
+@media(max-width: 480px){
+	
+	.meal-app{
+		flex-direction: column;
+		height: auto;
+	}
+	.meal-recipe{
+		width: auto;
+	}
+
+}
+
+@media(max-width: 800px){
+
+	div.app{
+		flex-direction: column;
+		height: auto;
+	}
+	div.SurfApp{	
+		width: 100%;
+	}
+	.sidebar{
+		width: auto;
+		height: auto;
+	}
+}
